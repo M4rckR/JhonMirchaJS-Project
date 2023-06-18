@@ -138,3 +138,19 @@ img {
     justify-content: center;
     gap: 1rem;
 }
+
+
+/* Ejercicio 3 (Eventos del teclado)*/
+.stage {
+    display: flex;
+    min-height: 50vh;
+    background-color: var(--second-color);
+}
+
+.ball {
+    margin: auto;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background-color: var(--main-color);
+}

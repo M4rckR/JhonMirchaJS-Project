@@ -2,6 +2,7 @@
 
 import hamburgerMenu from "./dom/menu_hambuguesa.js";
 import { alarm, digitalClock } from "./dom/reloj.js";
+import { moveBall, shortcuts } from "./dom/teclado.js";
 
 // La variable documentos nos sirver para disminuir la cantidad de codigo a escribir
 const d = document;
@@ -14,7 +15,7 @@ d.addEventListener("DOMContentLoaded", e => {
 })
 
 
-// const reloj = new Date();
-// let horaActual = reloj.toLocaleTimeString()
-
-// d.querySelector(".reloj").textContent = horaActual;
+d.addEventListener('keydown', (e) => {
+    shortcuts(e)
+    moveBall(e,'.ball', '.stage')
+})
