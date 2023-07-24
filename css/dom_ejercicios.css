@@ -86,6 +86,7 @@ img {
     opacity: 0;
     visibility: hidden;
     transition: all .3s ease;
+    overflow-y: auto;
 }
 
 .panel.is-active {
@@ -153,4 +154,83 @@ img {
     height: 4rem;
     border-radius: 50%;
     background-color: var(--main-color);
+}
+
+
+/* Boton de scroll */
+
+.scroll-top-btn {
+    position: fixed;
+    z-index: 999;
+    bottom: 1vh;
+    width: 4rem;
+    height: 4rem;
+    right: calc(4.25rem + 1vh);
+    border-radius: 50%;
+    font-size: 2rem;
+    font-weight: bold;
+    background-color: var(--main-color);
+    outline: none;
+    color: var(--second-color);
+    border: 0;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+
+.scroll-top-btn:hover {
+    background-color: var(--second-color);
+    color: var(--main-color);
+}
+
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.dark-theme-btn {
+    position: fixed;
+    z-index: 999;
+    bottom: 1vh;
+    width: 4rem;
+    height: 4rem;
+    left: 1vw;
+    border-radius: 50%;
+    font-size: 2rem;
+    font-weight: bold;
+    background-color: var(--main-color);
+    outline: none;
+    color: var(--second-color);
+    border: 0;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+    border: 1px solid black;
+}
+
+.dark-theme-btn:hover {
+    background-color: var(--second-color);
+}
+
+
+.dark-mode {
+    background-color: var(--second-color);
+    color: var(--main-color);
+    transition: all .3s;
+}
+
+/* Network Status */
+.online,
+.offline {
+    position: sticky;
+    top: 0;
+    z-index: 1000;    
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    background-color: #1b5e20;
+    color: #fff;
+}
+
+.offline {
+    background-color: #b71c1c;
 }

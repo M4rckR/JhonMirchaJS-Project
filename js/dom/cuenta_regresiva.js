@@ -23,8 +23,6 @@ export default function countdown(id, limitDate, finalMessage) {
 
         // Esto sera lo que se insertara en el html (Recordemos que este es una variable del dom)
         $countdown.innerHTML = `<h3>Faltan: ${days} dias ${hours} horas  ${minutes} minutos ${seconds} segundos</h3>`
-            
-            console.log(countdownDate, now, limitTime);
         // Validamos que cuando se llegue a ese tiempo dara un mensaje diferente al usuario
         if (limitTime < 0) {
             // Limpiamos el intervalo para que ya no se me ejecute

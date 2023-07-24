@@ -17,8 +17,6 @@ export function moveBall(e, ball, stage) {
 
 
     console.clear()
-    console.log(limitsBall);
-    console.log(limitStage);
     
 
     switch (e.keyCode) {
